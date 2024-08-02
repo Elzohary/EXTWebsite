@@ -1,0 +1,19 @@
+<section>
+    <div class="hContainer"
+        [ngStyle]="{'background-image': 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' + backgroundImage + ')'}">
+        <div class="top">
+            <app-nav-menu></app-nav-menu>
+        </div>
+
+        <div class="middle">
+            <p>
+                {{ title }}
+            </p>
+        </div>
+
+        <div class="bottom">
+            {{ subtitle }}
+        </div>
+
+    </div>
+</section>
