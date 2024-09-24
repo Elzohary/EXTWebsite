@@ -1,31 +1,15 @@
-<!-- <section>
-    <div class="hContainer">
-        <p> {{cardTitle}} </p>
-        <div class="content">
-            <div class="left">
-                <h1> {{title}} </h1>
-                <h4> {{paragraph}} </h4>
-                <p class="learnBtn"> {{CTA}} </p>
-            </div>
-
-            <div class="right">
-                <img class="img" [src]=image alt="">
-            </div>
-        </div>
-    </div>
-</section>
- -->
-
 <section>
     <div class="card">
-        <h6>Mission</h6>
-        <div class="content">
+        <h6>{{ cardTitle }}</h6>
+        <div class="content" [ngClass]="{'reverse-layout': imagePosition === 'left',
+                                        'margin-block-end': imagePosition === 'left'
+        }">
             <div class="cardText">
-                <h1>Empowring Progress through Innovation in Construction</h1>
-                <h5>Redfine the standards of construction by seamlessly integrating precision engineering, cutting-edge technology and commitment to sustainability.</h5>
-                <p>Learn How BTN</p>
+                <h1>{{ title }}</h1>
+                <h5>{{ paragraph }}</h5>
+                <p>{{ CTA }}</p>
             </div>
-            <div class="cardPhoto"></div>
+            <div class="cardPhoto" [ngStyle]="{'background-image': 'url(' + image + ')'}"></div>
         </div>
     </div>
 </section>
