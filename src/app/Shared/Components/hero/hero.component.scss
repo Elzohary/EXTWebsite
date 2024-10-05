@@ -1,8 +1,6 @@
 section {
-  max-height: 100vh;
-  min-height: 70%;
   width: auto;
-  padding: 3vw;
+  padding: 3%;
   box-sizing: border-box;
   color: #eff7f6;
 }
@@ -21,7 +19,6 @@ section {
   flex-basis: content;
 }
 
-
 .middle {
   justify-self: start;
   align-self: center;
@@ -30,5 +27,32 @@ section {
     width: 80%;
     font-size: 5vw;
     font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 1000px) { 
+
+  .hContainer{
+    height: 80vw;
+  }
+
+  .middle {
+    p {
+      font-size: 6vw;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) { 
+
+  .hContainer{
+    height: 60vh;
+  }
+
+  .middle {
+    p {
+      font-size: 7vw;
+      line-height: 10vw;
+    }
   }
 }

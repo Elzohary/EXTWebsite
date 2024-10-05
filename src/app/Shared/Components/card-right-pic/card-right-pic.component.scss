@@ -29,29 +29,18 @@ section {
   flex-direction: column;
   justify-content:space-between;
   flex-grow: 2;
-  
+  h1 {
+    font-size: 3vw;
+    font-weight: 400;
+    line-height: 4vw;
+  }
 }
 
 .cardPhoto {
   height: 100%;
-  width: 50%;
+  width: 50vw;
   background-image: url('https://images.unsplash.com/photo-1533378890784-b2a5b0a59d40?q=80&w=2037&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   border-radius: 2vw;
   margin-inline-end: 2em;
 }
 
-
-@media screen and (max-width: 1618px) {
-  .content {
-    flex-direction: column;
-  }
-
-  .cardText {
-    width: 100%;
-  }
-
-  .cardPhoto {
-    width: 100%;
-    margin-block: 3%;
-  }
-}
